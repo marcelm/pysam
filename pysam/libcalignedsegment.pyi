@@ -1,7 +1,13 @@
 import enum
 import re
 from array import array
-from typing import Any, List, Optional, Dict, Tuple, Union, Literal, overload
+from typing import Any, List, Optional, Dict, Tuple, Union, overload
+import sys
+if sys.version_info < (3, 8):
+    from typing_extensions import Literal
+else:
+    from typing import Literal
+
 from pysam import AlignmentHeader
 
 CMATCH: int
