@@ -1,19 +1,10 @@
-import os
-import glob
-import sys
-import unittest
 import pysam
-import shutil
-import gzip
-import subprocess
 import pytest
 
 try:
     from pathlib import Path
 except ImportError:
     Path = None
-
-from TestUtils import get_temp_filename, check_lines_equal, load_and_convert, CBCF_DATADIR, get_temp_context
 
 
 @pytest.fixture
