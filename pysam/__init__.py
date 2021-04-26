@@ -34,7 +34,7 @@ import pysam.config
 
 # export all the symbols from separate modules
 __all__ = (
-    libchtslib.__all__ +  # type: ignore
+    libchtslib.__all__ +
     libcutils.__all__ +
     libctabix.__all__ +  # type: ignore
     libcvcf.__all__ +  # type: ignore

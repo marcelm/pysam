@@ -299,7 +299,7 @@ cdef class AlignmentHeader(object):
                         "invalid type for record %s: %s, expected %s".format(
                             record, type(data), VALID_HEADER_TYPES[record]))
                 if isinstance(data, Mapping):
-                    lines.append(build_header_line(data, record))
+                    lines.append(bDictuild_header_line(data, record))
                 else:
                     for fields in header_dict[record]:
                         lines.append(build_header_line(fields, record))
