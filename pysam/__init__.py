@@ -42,7 +42,7 @@ __all__ = (
     libcbgzf.__all__ +  # type: ignore
     libcfaidx.__all__ +  # type: ignore
     libctabixproxies.__all__ +  # type: ignore
-    libcalignmentfile.__all__ +  # type: ignore
+    libcalignmentfile.__all__ +
     libcalignedsegment.__all__ +
     libcsamfile.__all__ +  # type: ignore
     ["SamtoolsError"] +
